@@ -30,9 +30,9 @@ body {
 }
 
 .title-border {
-    border-top: 5px dotted var(--warning);
+    border-top: 5px solid var(--warning);
     border-bottom: none;
-    width: 80px;
+    width: 90px;
     margin-top: 0;
 }
 
@@ -79,11 +79,16 @@ body {
         margin-top: 100px;
     }
 }
-
 @media(max-width: 768px) {
     /* Fundraisers */
     #fundraisers {
         margin-top: 400px;
+    }
+}
+@media(max-width: 576px) {
+    /* Fundraisers */
+    #fundraisers {
+        margin-top: 500px;
     }
 }
 
@@ -135,67 +140,21 @@ body {
 
 /* Ultra Scholars */
 #scholars {
-    background-color: whitesmoke;
+    background-color:whitesmoke;
 }
 
 .carousel-item img {
-    border-top-right-radius: 40%;
-    border-bottom-left-radius: 40%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+#scholars h3 {
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 
 
-/* Collection */
-/* .active-filter-btn {
-    background-color: var(--pink) !important;
-    color: white !important;
-    border-color: var(--pink) !important;
-}
-.collection-img span {
-    top: 20px;
-
-    right: 20px;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-} */
-
-/* Specials */
-/* .special-img span {
-    top: 20px;
-    right: 20px;
-}
-
-.special-img:hover img {
-    transform: scale(1.2);
-}
-
-.special-img img {
-    transition: all 0.3s ease;
-}  */
-
-/* Banner */
-/* #banner {
-    background: url(../images/offer_img.jpg) center/cover;
-}
-
-#banner .row {
-    min-height: 60vh;
-}
-
-.banner-content span {
-    font-size: 28px;
-}
-
-.banner-content h2 {
-    font-size: 60px;
-    font-family: var(--lg-font);
-} */
-
-/* Newsletter */
-/* #newsletter p {
-    max-width: 600px;
-}
 
 #newsletter .input-group {
     max-width: 500px;
@@ -223,3 +182,23 @@ footer .brand {
     letter-spacing: 2px;;
 
 }
+
+
+/* ***** Login Registration ***** */
+
+.page-content {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(230, 230, 230), white);
+}
+
+#login .row {
+    background-color: rgb(255, 215, 107);
+    border-radius: 30px;
+    box-shadow: 12px 12px 30px rgb(189, 183, 183);
+}
+
+#login img {
+    opacity: 85%;
+}
+
