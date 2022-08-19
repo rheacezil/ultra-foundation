@@ -12,14 +12,8 @@
 body {
     font-family: var(--sm-font);
 }
-/* .btn:not(.nav-btns button) {
-    background-color: white;
-    color: rgb(85, 85, 85);
-    padding: 10px 28px;
-    border-radius: 25px;
-    border: 1px solid rgb(85, 85, 85);
-} */
-.btn:not(.nav-btns button):hover {
+
+.btn:hover {
     background-color: whitesmoke;
     color: black;
     border: whitesmoke;
@@ -41,7 +35,6 @@ body {
     width: 40px;
 }
 #brand-name{
-    /* letter-spacing: 1px; */
     font-family: var(--sm-font);
 }
 .navbar {
@@ -57,40 +50,7 @@ body {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
-@media(min-width: 992px) {
-    .nav-item{
-        border-bottom: none;
-    }
 
-    /* Promo */
-    #promo .container {
-        max-width: 960px;
-    }
-
-    /* Fundraisers */
-    #fundraisers {
-        /* margin-top: 200px; */
-    }
-}
-
-@media(max-width: 991px) {
-    /* Fundraisers */
-    #fundraisers {
-        margin-top: 100px;
-    }
-}
-@media(max-width: 768px) {
-    /* Fundraisers */
-    #fundraisers {
-        margin-top: 400px;
-    }
-}
-@media(max-width: 576px) {
-    /* Fundraisers */
-    #fundraisers {
-        margin-top: 500px;
-    }
-}
 
 /* Hero */
 #hero {
@@ -112,10 +72,7 @@ body {
 .promo-wrap {
     z-index: 99;
 }
-/* #promo .container {
-    padding: 0 15px ;
-    margin: 0 auto;
-} */
+
 #promo .row {
     background-color: #fff;
     box-shadow: 0px 16px 28px 0px rgb(0 0 0 / 15%);
@@ -155,7 +112,10 @@ body {
 
 
 
-
+/* Newsletter  */
+#newsletter {
+    background-color: whitesmoke;
+}
 #newsletter .input-group {
     max-width: 500px;
 }
@@ -163,18 +123,9 @@ body {
 #newsletter .form-control {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-} */
+}
 
-/* #newsletter .btn {
-    background-color: var(--pink);
-    color: white;
-    border-color: var(--pink);
-} */
-/* 
-#newsletter .btn:hover {
-    background-color: black;
-    color: white;
-}   */
+
 
 /* Footer */
 footer .brand {
@@ -183,74 +134,32 @@ footer .brand {
 
 }
 
+@media(min-width: 992px) {
+    .nav-item{
+        border-bottom: none;
+    }
 
-/* ***** Login Registration ***** */
-
-.page-content {
-    width: 100%;
-    min-height: 100vh;
-    /* background: linear-gradient(45deg, rgb(230, 230, 230), white); */
-}
-#login {
-    background-color:  rgb(255, 215, 107);
-}
-
-#login .row {
-    background-color: whitesmoke;
-    border-radius: 30px;
-    box-shadow: 12px 12px 25px rgb(179, 140, 13);
+    /* Promo */
+    #promo .container {
+        max-width: 960px;
+    }
 }
 
-#login img {
-    opacity: 85%;
+@media(max-width: 991px) {
+    /* Fundraisers */
+    #fundraisers {
+        margin-top: 100px;
+    }
 }
-
-
-#signup {
-    background-color:  rgb(255, 215, 107);
+@media(max-width: 768px) {
+    /* Fundraisers */
+    #fundraisers {
+        margin-top: 400px;
+    }
 }
-
-#signup .row {
-    background-color: whitesmoke;
-    border-radius: 30px;
-    box-shadow: 12px 12px 25px rgb(179, 140, 13);
+@media(max-width: 576px) {
+    /* Fundraisers */
+    #fundraisers {
+        margin-top: 500px;
+    }
 }
-
-#signup img {
-    opacity: 85%;
-}
-
-
-/* ***** Logged in Account  ***** */
-
-/* Volunteer Programs */
-.program-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 215, 107, 0.9);
-    display: flex;
-    align-items: flex-end;
-    padding: 30px;
-    opacity: 0;
-}
-
-.program-item:hover .program-overlay {
-    opacity: 1;
-}
-
-.program-item:hover img {
-    transform: scale(1.1);
-}
-
-.program-item img, .program-item .program-overlay {
-    transition: all 0.4s ease;
-}
-
-/* Badges */
-#badges {
-    background: url(../images/background-1.png) top/cover;
-}
-
