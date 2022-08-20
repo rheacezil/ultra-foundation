@@ -156,6 +156,10 @@ footer .brand {
     #fundraisers {
         margin-top: 400px;
     }
+
+    #scholars h3 {
+        margin: auto;
+    }
 }
 @media(max-width: 576px) {
     /* Fundraisers */
